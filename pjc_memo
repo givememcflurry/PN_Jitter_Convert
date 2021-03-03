@@ -1,0 +1,21 @@
+1. Module import
+from smp import smp
+
+2. Using function
+smp('result.png')
+
+3. Input data to MATLAB
+
+4.
+from smp import cal
+f0,f1,f2,f3 = 10,1000,3000,10000
+b0,b1,b2,b3 = -58,-118,-132,-137
+a0,a1,a2,a3 = -30,-29.34,-9.5,0
+c0 = cal(b0,b1,f0,f1)
+c1 = cal(b1,b2,f1,f2)
+c2 = cal(b2,b2,f2,f3)
+c2 = cal(b2,b3,f2,f3)
+cs = c1+c2+c0
+cs
+js = ((2*cs)**(0.5))/(2*3.141592*155.52e+6)
+js
