@@ -114,7 +114,7 @@ def smp(input_file):
     vp_max = image_size[1]  # 변환이미지의 최대 vertical-pixel
 
     freq_min = 500  # 최소 주파수 (입력)
-    freq_max = 50000000  # 최댜 주파수 (입력)
+    freq_max = 50000000  # 최대 주파수 (입력)
     deci_min = -40  # 최소 데시벨 - 절대값상 최소 (입력)
     deci_max = -140  # 최대 데시벨 - 절대값상 최대 (입력)
 
@@ -159,7 +159,7 @@ def mat(input_file):
     print(frq, dbc)
 
 
-# [Final]측정이미지 지터값으로 변환
+# [Final]측정이미지 지터값으로 변환 22.04.15
 def pjc(input_file):
     frq = smp(input_file)[0]
     dbc = smp(input_file)[1]
